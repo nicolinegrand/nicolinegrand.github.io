@@ -1,0 +1,424 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #777C52;
+}
+
+p {
+    font-size: 15px;
+}
+
+
+header {
+    display: flex;
+    background: white;
+    width: 100%;
+    padding: 0 20px;
+    padding: 0 20px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1
+}
+
+#logo-burger {
+    display: flex;
+    align-items: center;
+    margin-left: .5em;
+}
+
+.logo1 {
+    display: flex;
+    width: 110px;
+    position: relative;
+    margin: 4% 0% 8% 0%;
+}
+
+#logo a,
+#main-nav a {
+    color: #777C52;
+    text-decoration: none;
+}
+
+#main-nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: .5em;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    align-items: center;
+}
+
+#main-nav a {
+    display: flex;
+    margin: 0 25px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+label {
+    color: #777C52;
+}
+
+#main-nav a:hover {
+    color: darkgreen;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.active {
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+label {
+    display: none;
+}
+
+
+/************* FORSIDE BILLEDE *************/
+
+#home {
+    background: url("../images/horisont-rejser-forside.png");
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
+    height: 60vh;
+    width: 100%;
+    padding: 5%;
+}
+
+#home > h1 {
+    padding-top: 30%;
+    text-align: center;
+    font-size: 40px;
+}
+
+#home > h2 {
+    padding-top: 5%;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+/**************** REJSEMÅL ***************/
+
+#vietnam-tekst,
+#vietnam-billede {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5%;
+    text-align: center;
+}
+
+#vietnam-billede > img {
+    width: 100%;
+    padding-bottom: 10%
+}
+
+#sri-lanka-tekst,
+#sri-lanka-billede {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5%;
+    text-align: center;
+    background-color: #C4C6B5;
+}
+
+#sri-lanka-billede > img {
+    width: 100%;
+    padding-bottom: 10%
+}
+
+#jordan-tekst,
+#jordan-billede {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5%;
+    text-align: center;
+}
+
+#jordan-billede > img {
+    width: 100%;
+    padding-bottom: 10%
+}
+
+footer {
+    text-align: center;
+    background-color: #C4C6B5;
+    padding: 5%;
+    line-height: 25px;
+}
+
+
+/************* FAMILIEREJSER**************/
+
+#familie-rejser-overskrift {
+    text-align: center;
+}
+
+
+.billede > img {
+    width: 100%;
+}
+
+article {
+    padding: 6%;
+}
+
+
+
+.familierejse-tekst .familierejse-program > p {
+    font-size: 13px;
+}
+
+.familierejse-program {
+    background-color: #C4C6B5;
+}
+
+.row1 {
+    background-color: #C4C6B5;
+    padding: 2%;
+}
+
+.familierejse-program > .row1 > p {
+    margin: 3%;
+}
+
+.familierejse-program > .row1 > h2 {
+    margin: 3%;
+}
+
+
+#familie-rejser-overskrift {
+    background-color: #E6E8D6;
+    margin-bottom: 8%;
+}
+
+#familie-rejser-overskrift > h1 {
+    padding: 10%;
+}
+
+
+
+
+
+/*-------------------------- NAVIGATION -------------------------------*/
+@media only screen and (max-width: 750px) {
+
+    header {
+        display: block;
+    }
+
+    #logo-burger {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo-burger label {
+        display: block;
+        font-size: 32px;
+        cursor: pointer;
+    }
+
+    #toggle:checked + #main-nav {
+        display: block;
+    }
+
+    #main-nav {
+        display: none;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #main-nav li {
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    #main-nav a {
+        margin: 0;
+        line-height: 50px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #main-nav li:last-of-type {
+        border-bottom: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+
+/************ MOBILE ***************/
+
+@media only screen and (min-width: 400px) {
+
+
+
+
+    /***************TABLET*************/
+
+    @media only screen and (min-width: 650px) {
+
+        p {
+            font-size: 16px;
+            line-height: 18px;
+        }
+
+        #home > h1 {
+            padding-top: 15%;
+            text-align: center;
+            font-size: 45px;
+        }
+
+        #home > h2 {
+            padding-top: 2%;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .billede-tekst {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+
+        .billede-tekst-1 {
+            display: flex;
+            flex-direction: row-reverse;
+            width: 100%;
+        }
+
+        #vietnam-tekst,
+        #sri-lanka-tekst,
+        #jordan-tekst {
+            text-align: left;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        #vietnam-tekst,
+        #jordan-tekst {
+            padding-right: 1%;
+        }
+
+        #sri-lanka-tekst {
+            padding-left: 1%;
+        }
+
+        #vietnam-billede,
+        #jordan-billede {
+            padding-left: 1%;
+        }
+
+        #sri-lanka-billede {
+            padding-right: 1%;
+        }
+
+        #familie-rejser-overskrift {
+            margin-bottom: 5%;
+        }
+
+        #familie-rejser-overskrift > h1 {
+            padding: 7%;
+            font-size: 40px; 
+        }
+
+        #footer {
+            padding: 0;
+        }
+
+        #footer > p {
+            padding: 3%;
+            font-size: 16px;
+        }
+
+
+    }
+
+
+    /*************** LAPTOP *************/
+
+    @media only screen and (min-width: 900px) {
+
+        p {
+            font-size: 17px;
+        }
+
+        h2 {
+            font-size: 40px;
+        }
+
+        #home > h1 {
+            padding-top: 5%;
+            text-align: center;
+            font-size: 55px;
+        }
+
+        #home > h2 {
+            padding-top: 2%;
+            text-align: center;
+            font-size: 40px;
+        }
+
+
+        article {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+
+        article > section {
+            width: 50%;
+            padding: 5%;
+            align-items: center;
+        }
+
+        #familie-rejser-overskrift {
+            padding: 5%;
+        }
+        
+        #familie-rejser-overskrift > h1 {
+            font-size: 50px;
+            padding: 0; 
+        }
+
+        .billede {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+        }
+
+
+        footer > p {
+            font-size: 23px;
+        }
+
+    }
